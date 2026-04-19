@@ -176,7 +176,16 @@ This project is licensed under the **MIT License** — you are free to use, modi
 - simranpreet4248@gmail.com    
 - [GitHub](https://github.com/Simran-210803)
 
+## **Contributor
+- Olamidefolorunso27317@gmail.com
+- [Github](https://github.com/olatemilode)
 
+# How tags are generated
+Every successful pipeline run produces two docker images 
+1. :latest 
+Always points to the most recent successful build. Overwritten on every push to main
+2. :git-commit-sha
+Automatically generated from the unique git ommit ID using {{ github.sha }} in github actions. This makes every build fully traceable you can find the exat commit in github that produced any image on Dockerhub.
 
 
 
