@@ -34,4 +34,5 @@ jobs:
           context: .
           push: true 
           tags: 
-          ${{ secrets.DOCKER_USERNAME }}/docker-publish-pipeline:latest,${{ secrets.DOCKER_USERNAME }}/docker-publish-pipeline:${{ github.sha }}
+            ${{ secrets.DOCKER_USERNAME }}/STUDENT-RECORD-API:latest
+            ${{ secrets.DOCKER_USERNAME }}/STUDENT-RECORD-API:${{ github.sha }}
