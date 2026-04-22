@@ -33,6 +33,11 @@ jobs:
         with:
           context: .
           push: true 
-          tags: 
+          tags: |
             ${{ secrets.DOCKER_USERNAME }}/student-record-api:latest
             ${{ secrets.DOCKER_USERNAME }}/student-record-api:${{ github.sha }}
+
+
+
+
+
